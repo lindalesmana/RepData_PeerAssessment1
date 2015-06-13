@@ -66,7 +66,7 @@ print(stepsByDay)
 <br>**2. Make a histogram of the total number of steps taken each day**
 
 ```r
-ggplot(stepsByDay, aes(date, total_steps)) + geom_bar(stat = "identity", fill = "steelblue", width = 0.8) + labs(title = "Total number of steps per day") + labs(x = "Date", y = "Total number of steps") + theme(plot.title=element_text(size=13,face="bold"), axis.title=element_text(size=13))
+ggplot(stepsByDay, aes(date, total_steps)) + geom_bar(stat = "identity", fill = "steelblue", width = 0.8) + labs(title = "Total number of steps per day") + labs(x = "Date", y = "Total number of steps") + theme(plot.title=element_text(size=14,face="bold"), axis.title=element_text(size=14))
 ```
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
@@ -110,7 +110,7 @@ print(AveStepsByInterval)
 <br>**1b. Make a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)**
 
 ```r
-ggplot(AveStepsByInterval, aes(interval, average_steps)) + geom_line(stat = "identity", color = "steelblue") + labs(title = "Average number of steps taken for each 5-minute interval") + labs(x = "Interval (minutes)", y = "Average number of steps") + theme(plot.title=element_text(size=13,face="bold"), axis.title=element_text(size=13))
+ggplot(AveStepsByInterval, aes(interval, average_steps)) + geom_line(stat = "identity", color = "steelblue") + labs(title = "Average number of steps taken for each 5-minute interval") + labs(x = "Interval (minutes)", y = "Average number of steps") + theme(plot.title=element_text(size=14,face="bold"), axis.title=element_text(size=14))
 ```
 
 ![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
@@ -202,7 +202,7 @@ print(newStepsByDay)
 
 
 ```r
-ggplot(newStepsByDay, aes(date, total_steps)) + geom_bar(stat = "identity", fill = "steelblue", width = 0.8) + labs(title = "Total number of steps per day") + labs(x = "Date", y = "Total number of steps") +  theme(plot.title=element_text(size=13,face="bold"), axis.title=element_text(size=13))
+ggplot(newStepsByDay, aes(date, total_steps)) + geom_bar(stat = "identity", fill = "steelblue", width = 0.8) + labs(title = "Total number of steps per day") + labs(x = "Date", y = "Total number of steps") +  theme(plot.title=element_text(size=14,face="bold"), axis.title=element_text(size=14))
 ```
 
 ![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14-1.png) 
